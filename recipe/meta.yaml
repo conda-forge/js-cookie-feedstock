@@ -1,6 +1,6 @@
 {% set name = "js-cookie" %}
-{% set version = "2.1.4" %}
-{% set sha256 = "a4812cdae1f0f91305f847f6c3889088b05a5a6734bfe8316f69d2ab6098b9ef" %}
+{% set version = "2.2.0" %}
+{% set sha256 = "bad440c8a5beadc1d78d36dc072d37150abcc5a9a4b483d3583565edfe76c2b0" %}
 
 package:
   name: {{ name|lower }}
