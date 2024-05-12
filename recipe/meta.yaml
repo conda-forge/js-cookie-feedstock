@@ -1,6 +1,6 @@
 {% set name = "js-cookie" %}
-{% set version = "2.2.1" %}
-{% set sha256 = "b1b559db9fa29da7d92530c2300d7e9ff045276efcae760ed89296857ba79e9f" %}
+{% set version = "3.0.1" %}
+{% set sha256 = "a6d8d61c56c520fbd1ce73a3d07b1d3ca2718bd957bb1d682e28a011948a0c3a" %}
 
 package:
   name: {{ name|lower }}
@@ -20,20 +20,20 @@ build:
 requirements:
   build:
     - nodejs
-  
+
 test:
   commands:
     - npm list -g js-cookie
   requires:
     - nodejs
-   
+
 
 about:
   home: https://github.com/js-cookie/js-cookie
   license: MIT
   license_family: MIT
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
-  summary: 'A simple, lightweight JavaScript API for handling browser cookies'
+  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE
+  summary: A simple, lightweight JavaScript API for handling browser cookies
   description: |
     A simple, lightweight JavaScript API for handling browser cookies  
   doc_url: https://github.com/js-cookie/js-cookie/tree/latest#readme
