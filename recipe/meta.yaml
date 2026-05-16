@@ -1,6 +1,6 @@
 {% set name = "js-cookie" %}
-{% set version = "2.2.1" %}
-{% set sha256 = "b1b559db9fa29da7d92530c2300d7e9ff045276efcae760ed89296857ba79e9f" %}
+{% set version = "3.0.7" %}
+{% set sha256 = "fdd4c3503f7f973d98e56e7ac10f3e18087065239b93e02f1eaf215806ca7365" %}
 
 package:
   name: {{ name|lower }}
@@ -20,13 +20,13 @@ build:
 requirements:
   build:
     - nodejs
-  
+
 test:
   commands:
     - npm list -g js-cookie
   requires:
     - nodejs
-   
+
 
 about:
   home: https://github.com/js-cookie/js-cookie
